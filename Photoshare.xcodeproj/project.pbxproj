@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E55414A1C8914A7009CCF47 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5541491C8914A6009CCF47 /* ProfileViewController.swift */; };
+		3E55414C1C891E84009CCF47 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E55414B1C891E84009CCF47 /* CaptureViewController.swift */; };
+		3E55414E1C8B919A009CCF47 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E55414D1C8B9199009CCF47 /* FeedViewController.swift */; };
+		3E5541521C8D5A60009CCF47 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5541511C8D5A60009CCF47 /* Post.swift */; };
+		3E5541541C8D6753009CCF47 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5541531C8D6753009CCF47 /* PhotoCell.swift */; };
 		3E92E1DF1C85771000200021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92E1DE1C85771000200021 /* AppDelegate.swift */; };
 		3E92E1E11C85771000200021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92E1E01C85771000200021 /* ViewController.swift */; };
 		3E92E1E41C85771100200021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E92E1E21C85771100200021 /* Main.storyboard */; };
@@ -18,6 +23,11 @@
 
 /* Begin PBXFileReference section */
 		35E5C11941C128DE1863A2A1 /* Pods-Photoshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photoshare.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photoshare/Pods-Photoshare.release.xcconfig"; sourceTree = "<group>"; };
+		3E5541491C8914A6009CCF47 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3E55414B1C891E84009CCF47 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		3E55414D1C8B9199009CCF47 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3E5541511C8D5A60009CCF47 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3E5541531C8D6753009CCF47 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		3E92E1DB1C85771000200021 /* Photoshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photoshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E92E1DE1C85771000200021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E92E1E01C85771000200021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +60,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3E55414F1C8D59CE009CCF47 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E92E1F01C857AF300200021 /* LoginViewController.swift */,
+				3E5541491C8914A6009CCF47 /* ProfileViewController.swift */,
+				3E55414B1C891E84009CCF47 /* CaptureViewController.swift */,
+				3E55414D1C8B9199009CCF47 /* FeedViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3E5541501C8D59EA009CCF47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E5541511C8D5A60009CCF47 /* Post.swift */,
+				3E5541531C8D6753009CCF47 /* PhotoCell.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3E92E1D21C85771000200021 = {
 			isa = PBXGroup;
 			children = (
@@ -71,13 +101,14 @@
 		3E92E1DD1C85771000200021 /* Photoshare */ = {
 			isa = PBXGroup;
 			children = (
+				3E5541501C8D59EA009CCF47 /* Models */,
+				3E55414F1C8D59CE009CCF47 /* ViewControllers */,
 				3E92E1DE1C85771000200021 /* AppDelegate.swift */,
 				3E92E1E01C85771000200021 /* ViewController.swift */,
 				3E92E1E21C85771100200021 /* Main.storyboard */,
 				3E92E1E51C85771100200021 /* Assets.xcassets */,
 				3E92E1E71C85771100200021 /* LaunchScreen.storyboard */,
 				3E92E1EA1C85771100200021 /* Info.plist */,
-				3E92E1F01C857AF300200021 /* LoginViewController.swift */,
 			);
 			path = Photoshare;
 			sourceTree = "<group>";
@@ -215,7 +246,12 @@
 			files = (
 				3E92E1F11C857AF300200021 /* LoginViewController.swift in Sources */,
 				3E92E1E11C85771000200021 /* ViewController.swift in Sources */,
+				3E55414A1C8914A7009CCF47 /* ProfileViewController.swift in Sources */,
 				3E92E1DF1C85771000200021 /* AppDelegate.swift in Sources */,
+				3E5541541C8D6753009CCF47 /* PhotoCell.swift in Sources */,
+				3E55414E1C8B919A009CCF47 /* FeedViewController.swift in Sources */,
+				3E5541521C8D5A60009CCF47 /* Post.swift in Sources */,
+				3E55414C1C891E84009CCF47 /* CaptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
